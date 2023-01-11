@@ -60,7 +60,9 @@ const Details = () => {
 };
 
 export default function DetailsErrorBoundary(props) {
-  <ErrorBoundary>
-    <Details {...props} />
-  </ErrorBoundary>;
+  return (
+    <ErrorBoundary>
+      <Details {...props} />
+    </ErrorBoundary>
+  );
 }
